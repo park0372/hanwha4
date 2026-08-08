@@ -98,47 +98,6 @@ if (companySearch) {
 }
 
 
-
-// ============================================
-// Category Filter
-// ============================================
-
-function filterCategory(category) {
-
-    if(category === "ALL") {
-        return vendors;
-    }
-
-
-    return vendors.filter(v =>
-        v.category === category
-    );
-
-}
-
-
-
-
-
-// ============================================
-// Approval Filter
-// ============================================
-
-function filterApproval(status) {
-
-    if(status === "ALL") {
-        return vendors;
-    }
-
-
-    return vendors.filter(v =>
-        v.approval === status
-    );
-
-}
-
-
-
 // ============================================
 // Dashboard KPI
 // ============================================
