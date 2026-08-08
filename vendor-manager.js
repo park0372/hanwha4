@@ -472,18 +472,23 @@ document.getElementById("vendorWebsite").value = v.website || "";
 editIndex = index;
     modal.style.display = "flex";
 }
+
 // ============================================
-// Category / Status Filter
+// Vendor Search / Category / Status Filter
 // ============================================
 
 function applyFilters() {
 
-const keyword = (document.getElementById("vendorSearch")?.value || "")
-    .trim()
-    .toLowerCase();
+    const keyword =
+        (document.getElementById("vendorSearch")?.value || "")
+        .trim()
+        .toLowerCase();
 
-    const category = document.getElementById("filterCategory")?.value || "";
-    const status = document.getElementById("filterStatus")?.value || "";
+    const category =
+        document.getElementById("categoryFilter")?.value || "";
+
+    const status =
+        document.getElementById("statusFilter")?.value || "";
 
     const filtered = vendors.filter(v => {
 
@@ -496,34 +501,47 @@ const keyword = (document.getElementById("vendorSearch")?.value || "")
             (v.contact || "").toLowerCase().includes(keyword);
 
         const matchCategory =
-            category === "" || v.category === category;
+            category === "" ||
+            v.category === category;
 
         const matchStatus =
-            status === "" || v.approval === status;
+            status === "" ||
+            v.approval === status;
 
-        return matchKeyword && matchCategory && matchStatus;
-
+        return matchKeyword &&
+               matchCategory &&
+               matchStatus;
     });
 
     renderVendorTable(filtered);
-
 }
-const vendorSearch = document.getElementById("vendorSearch");
+
+
+// Company Search
+const vendorSearch =
+    document.getElementById("vendorSearch");
 
 if (vendorSearch) {
     vendorSearch.addEventListener("input", applyFilters);
 }
-const categoryFilter = document.getElementById("categoryFilter");
-const statusFilter = document.getElementById("statusFilter");
+
+
+// Category Filter
+const categoryFilter =
+    document.getElementById("categoryFilter");
 
 if (categoryFilter) {
     categoryFilter.addEventListener("change", applyFilters);
 }
 
+
+// Status Filter
+const statusFilter =
+    document.getElementById("statusFilter");
+
 if (statusFilter) {
     statusFilter.addEventListener("change", applyFilters);
 }
-
 
 function showVendorDetail(index) {
 
