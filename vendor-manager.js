@@ -356,7 +356,7 @@ if (!confirm(`Delete "${company}" ?`)) {
     return;
 }
 
-vendors.splice(selectedVendorIndex, 1);
+vendors.splice(index, 1);
 
 selectedVendorIndex = null;
 
