@@ -64,39 +64,6 @@ let vendors = savedVendors
 
 
 
-// ============================================
-// Search Vendor
-// ============================================
-
-const companySearch = document.getElementById("companySearch");
-
-if (companySearch) {
-
-    companySearch.addEventListener("input", function (e) {
-
-        const keyword = e.target.value.trim().toLowerCase();
-
-        if (keyword === "") {
-            renderVendorTable(vendors);
-            return;
-        }
-
-        const filtered = vendors.filter(v =>
-
-            (v.name || "").toLowerCase().includes(keyword) ||
-            (v.category || "").toLowerCase().includes(keyword) ||
-            (v.location || "").toLowerCase().includes(keyword) ||
-            (v.approval || "").toLowerCase().includes(keyword) ||
-            (v.contact || "").toLowerCase().includes(keyword)
-
-        );
-
-        renderVendorTable(filtered);
-
-    });
-
-}
-
 
 // ============================================
 // Dashboard KPI
