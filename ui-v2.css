@@ -1007,3 +1007,52 @@ header{
     font-weight: 600;
     text-align: right;
 }
+/* =========================================================
+   IVIP SIDEBAR - FINAL COMPACT DESIGN
+========================================================= */
+
+.sidebar {
+    width: 230px;
+    padding: 22px 16px;
+}
+
+.logo {
+    margin-bottom: 28px;
+}
+
+.sidebar nav ul {
+    gap: 5px;
+}
+
+.sidebar nav li {
+    min-height: 42px;
+    padding: 0 12px;
+    border-radius: 9px;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    transition: all .18s ease;
+}
+
+.sidebar nav li i {
+    width: 18px;
+    height: 18px;
+    margin-right: 11px;
+}
+
+.sidebar nav li:hover {
+    background: rgba(255,255,255,.06);
+}
+
+.sidebar nav li.active {
+    background: rgba(37,99,235,.18);
+    color: #ffffff;
+
+    box-shadow:
+        inset 3px 0 0 #3B82F6;
+}
+
+.sidebar nav li.active i {
+    color: #60A5FA;
+}
