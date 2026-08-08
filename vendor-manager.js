@@ -275,7 +275,7 @@ if (typeof updateCategoryChart === "function") {
    Vendor Modal
 ========================================== */
 let editIndex = -1;
-onst modal = document.getElementById("vendorModal");
+const modal = document.getElementById("vendorModal");
 
 const vendorAddBtn = document.getElementById("addVendorBtn");
 
