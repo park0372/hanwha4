@@ -1200,3 +1200,109 @@ header{
 #newsList li:last-child {
     border-bottom: none;
 }
+/* =========================================================
+   TOP HEADER - FINAL
+========================================================= */
+
+.top-header {
+    min-height: 64px;
+    padding: 0 4px 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #E5E7EB;
+    margin-bottom: 16px;
+}
+
+.top-header .title h1 {
+    margin: 0;
+
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 750;
+
+    color: #0F172A;
+}
+
+.top-header .title p {
+    margin: 5px 0 0;
+
+    font-size: 11px;
+    color: #94A3B8;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon-btn {
+    width: 34px;
+    height: 34px;
+
+    border: 1px solid #E5E7EB;
+    border-radius: 9px;
+
+    background: #FFFFFF;
+    color: #64748B;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: all .18s ease;
+}
+
+.icon-btn:hover {
+    background: #F8FAFC;
+    color: #2563EB;
+    border-color: #BFDBFE;
+}
+
+.icon-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+.user-box {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    margin-left: 4px;
+    padding-left: 12px;
+
+    border-left: 1px solid #E5E7EB;
+}
+
+.avatar {
+    width: 34px;
+    height: 34px;
+
+    border-radius: 50%;
+
+    background: #2563EB;
+    color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.user-box strong {
+    font-size: 11px;
+    color: #1E293B;
+}
+
+.user-box span {
+    font-size: 9px;
+    color: #94A3B8;
+}
