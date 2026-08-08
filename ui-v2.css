@@ -1056,3 +1056,147 @@ header{
 .sidebar nav li.active i {
     color: #60A5FA;
 }
+/* =========================================================
+   DASHBOARD KPI - FINAL
+========================================================= */
+
+.kpi {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.kpi .card {
+    min-height: 112px;
+    padding: 18px 20px;
+    border-radius: 14px;
+    border: 1px solid #E5E7EB;
+    background: #FFFFFF;
+
+    box-shadow:
+        0 3px 12px rgba(15,23,42,.05);
+
+    transition:
+        transform .18s ease,
+        box-shadow .18s ease;
+}
+
+.kpi .card:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 22px rgba(15,23,42,.09);
+}
+
+.kpi .card h4 {
+    margin: 0 0 8px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    color: #64748B;
+    text-transform: uppercase;
+    letter-spacing: .4px;
+}
+
+.kpi .card h2 {
+    margin: 0;
+
+    font-size: 30px;
+    line-height: 1;
+
+    font-weight: 750;
+    color: #0F172A;
+}
+
+.kpi .card span {
+    display: block;
+
+    margin-top: 8px;
+
+    font-size: 10px;
+    color: #94A3B8;
+}
+/* =========================================================
+   DASHBOARD PANELS - FINAL
+========================================================= */
+
+.dashboard {
+    display: grid;
+    grid-template-columns: minmax(0, 1.65fr) minmax(300px, .9fr);
+    gap: 16px;
+    align-items: start;
+}
+
+.left-panel,
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.panel {
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 14px;
+
+    padding: 18px;
+
+    box-shadow:
+        0 3px 12px rgba(15,23,42,.045);
+}
+
+.panel h3 {
+    margin: 0 0 14px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    color: #0F172A;
+}
+.chart-box {
+    height: 235px;
+    position: relative;
+}
+
+.chart-box canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+#recentCompanies {
+    min-height: 110px;
+}
+
+#recentCompanies > div {
+    padding: 10px 0;
+
+    border-bottom: 1px solid #F1F5F9;
+
+    font-size: 12px;
+}
+
+#recentCompanies > div:last-child {
+    border-bottom: none;
+}
+#newsList {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+#newsList li {
+    padding: 11px 0;
+
+    border-bottom: 1px solid #F1F5F9;
+
+    font-size: 11px;
+    line-height: 1.5;
+
+    color: #475569;
+}
+
+#newsList li:last-child {
+    border-bottom: none;
+}
