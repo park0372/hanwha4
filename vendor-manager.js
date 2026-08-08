@@ -513,8 +513,8 @@ const vendorSearch = document.getElementById("vendorSearch");
 if (vendorSearch) {
     vendorSearch.addEventListener("input", applyFilters);
 }
-const categoryFilter = document.getElementById("filterCategory");
-const statusFilter = document.getElementById("filterStatus");
+const categoryFilter = document.getElementById("categoryFilter");
+const statusFilter = document.getElementById("statusFilter");
 
 if (categoryFilter) {
     categoryFilter.addEventListener("change", applyFilters);
