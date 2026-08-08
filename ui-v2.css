@@ -1433,3 +1433,63 @@ body {
     padding: 0 8px !important;
     font-size: 9px !important;
 }
+/* =========================================================
+   VENDOR WORKSPACE - COMPACT FINAL
+========================================================= */
+
+.vendor-workspace {
+    grid-template-columns: 68% 32% !important;
+    gap: 12px !important;
+    margin-top: 14px !important;
+}
+
+.vendor-left .panel,
+.vendor-right .panel {
+    padding: 14px !important;
+}
+
+.vendor-toolbar {
+    gap: 6px !important;
+    margin-bottom: 10px !important;
+    flex-wrap: nowrap !important;
+}
+
+.vendor-toolbar input {
+    min-width: 0 !important;
+    height: 32px !important;
+    padding: 0 9px !important;
+    font-size: 11px !important;
+}
+
+.vendor-toolbar select {
+    min-width: 115px !important;
+    height: 32px !important;
+    padding: 0 8px !important;
+    font-size: 10px !important;
+}
+
+.vendor-toolbar .primary-btn {
+    height: 32px !important;
+    padding: 0 11px !important;
+    font-size: 10px !important;
+    white-space: nowrap;
+}
+
+.vendor-table th {
+    padding: 7px 8px !important;
+    font-size: 9px !important;
+    height: 30px !important;
+}
+
+.vendor-table td {
+    padding: 7px 8px !important;
+    font-size: 10px !important;
+    height: 34px !important;
+}
+
+.vendor-table .view-btn,
+.vendor-table .edit-btn,
+.vendor-table .delete-btn {
+    padding: 4px 7px !important;
+    font-size: 9px !important;
+}
