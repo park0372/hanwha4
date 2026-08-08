@@ -1306,3 +1306,71 @@ header{
     font-size: 9px;
     color: #94A3B8;
 }
+/* =========================================================
+   IVIP COMPACT DESKTOP LAYOUT
+========================================================= */
+
+html {
+    font-size: 14px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.sidebar {
+    width: 220px !important;
+    min-width: 220px !important;
+    padding: 18px 13px !important;
+}
+
+.content {
+    padding: 18px 22px !important;
+    width: calc(100% - 220px) !important;
+}
+
+.top-header {
+    min-height: 52px !important;
+    margin-bottom: 12px !important;
+    padding-bottom: 10px !important;
+}
+
+.top-header .title h1 {
+    font-size: 20px !important;
+}
+
+.top-header .title p {
+    font-size: 10px !important;
+}
+
+.kpi {
+    gap: 10px !important;
+    margin-bottom: 12px !important;
+}
+
+.kpi .card {
+    min-height: 92px !important;
+    padding: 14px 16px !important;
+}
+
+.kpi .card h2 {
+    font-size: 25px !important;
+}
+
+.dashboard {
+    gap: 12px !important;
+}
+
+.panel {
+    padding: 14px !important;
+    border-radius: 11px !important;
+}
+
+.panel h3 {
+    margin-bottom: 10px !important;
+    font-size: 13px !important;
+}
+
+.chart-box {
+    height: 190px !important;
+}
