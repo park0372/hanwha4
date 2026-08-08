@@ -848,3 +848,162 @@ header{
     box-shadow:0 12px 25px rgba(37,99,235,.35);
 
 }
+/* =========================================================
+   IVIP LOGO / ABOUT MENU - FINAL
+========================================================= */
+
+.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+.logo-main {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+}
+
+.logo-icon {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #2563EB,
+        #3B82F6
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, .30);
+}
+
+.logo-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.logo-text {
+    min-width: 0;
+}
+
+.logo-text h2 {
+    margin: 0;
+    font-size: 21px;
+    line-height: 1.1;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: .2px;
+}
+
+.logo-text p {
+    margin: 4px 0 0;
+    color: #94A3B8;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: .4px;
+    white-space: nowrap;
+}
+
+.logo-menu-btn {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+
+    border: 0;
+    border-radius: 7px;
+
+    background: transparent;
+    color: #94A3B8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.logo-menu-btn:hover {
+    background: rgba(255,255,255,.08);
+    color: #ffffff;
+}
+
+.logo-menu-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* About IVIP dropdown */
+
+.ivip-menu {
+    position: absolute;
+
+    top: 52px;
+    left: 0;
+    right: 0;
+
+    padding: 10px;
+
+    background: #ffffff;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+
+    box-shadow:
+        0 12px 30px rgba(15,23,42,.18);
+
+    z-index: 1000;
+
+    display: none;
+}
+
+.ivip-menu.show {
+    display: block;
+}
+
+.ivip-menu-title {
+    padding: 8px 10px 10px;
+
+    color: #111827;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    border-bottom: 1px solid #EEF2F7;
+
+    margin-bottom: 5px;
+}
+
+.ivip-menu-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+
+    padding: 8px 10px;
+
+    font-size: 10px;
+}
+
+.ivip-menu-item span {
+    color: #6B7280;
+}
+
+.ivip-menu-item strong {
+    color: #111827;
+    font-weight: 600;
+    text-align: right;
+}
