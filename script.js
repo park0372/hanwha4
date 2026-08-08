@@ -272,35 +272,6 @@ if (ivipMenuBtn && ivipMenu) {
     });
 
 }
-// ============================================
-// IVIP Logo Menu
-// ============================================
-
-const ivipMenuBtn = document.getElementById("ivipMenuBtn");
-const ivipMenu = document.getElementById("ivipMenu");
-
-if (ivipMenuBtn && ivipMenu) {
-
-    ivipMenuBtn.addEventListener("click", function (e) {
-
-        e.stopPropagation();
-
-        ivipMenu.classList.toggle("show");
-
-    });
-
-    document.addEventListener("click", function (e) {
-
-        if (!ivipMenu.contains(e.target) &&
-            !ivipMenuBtn.contains(e.target)) {
-
-            ivipMenu.classList.remove("show");
-
-        }
-
-    });
-
-}
 
 
 
