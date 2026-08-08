@@ -1374,3 +1374,62 @@ body {
 .chart-box {
     height: 190px !important;
 }
+/* =========================================================
+   VENDOR DATABASE - COMPACT FINAL
+========================================================= */
+
+.vendor-section {
+    margin-top: 14px !important;
+}
+
+.vendor-section .section-header {
+    margin-bottom: 10px !important;
+}
+
+.vendor-section .section-header h3 {
+    font-size: 14px !important;
+}
+
+.vendor-controls {
+    display: flex !important;
+    align-items: center !important;
+    gap: 7px !important;
+    margin-bottom: 10px !important;
+}
+
+.vendor-controls input,
+.vendor-controls select {
+    height: 32px !important;
+    padding: 0 9px !important;
+    font-size: 11px !important;
+    border-radius: 7px !important;
+}
+
+.vendor-controls button {
+    height: 32px !important;
+    padding: 0 12px !important;
+    font-size: 11px !important;
+    border-radius: 7px !important;
+}
+
+.vendor-table {
+    font-size: 11px !important;
+}
+
+.vendor-table th {
+    height: 32px !important;
+    padding: 6px 8px !important;
+    font-size: 10px !important;
+}
+
+.vendor-table td {
+    height: 36px !important;
+    padding: 6px 8px !important;
+    font-size: 10px !important;
+}
+
+.vendor-table button {
+    height: 26px !important;
+    padding: 0 8px !important;
+    font-size: 9px !important;
+}
