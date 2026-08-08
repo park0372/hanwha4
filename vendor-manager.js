@@ -1047,3 +1047,49 @@ if (copyVendorIdBtn) {
 
 }
 
+// ============================================
+// STEP 6 - Previous / Next Vendor
+// ============================================
+
+function showPreviousVendor() {
+
+    if (selectedVendorIndex === null) return;
+
+    if (selectedVendorIndex > 0) {
+        showVendorDetail(selectedVendorIndex - 1);
+    }
+}
+
+
+function showNextVendor() {
+
+    if (selectedVendorIndex === null) return;
+
+    if (selectedVendorIndex < vendors.length - 1) {
+        showVendorDetail(selectedVendorIndex + 1);
+    }
+}
+
+
+// Previous button
+const prevVendorBtn =
+    document.getElementById("prevVendorBtn");
+
+if (prevVendorBtn) {
+    prevVendorBtn.addEventListener(
+        "click",
+        showPreviousVendor
+    );
+}
+
+
+// Next button
+const nextVendorBtn =
+    document.getElementById("nextVendorBtn");
+
+if (nextVendorBtn) {
+    nextVendorBtn.addEventListener(
+        "click",
+        showNextVendor
+    );
+}
